@@ -5,5 +5,8 @@
         <a href="{{url absolute="true"}}">{{label}}</a>
       </li>
     {{/foreach}}
+      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} {{#is "home"}}nav-current{{/is}}">
+          <a id="avatar-link"  href="{{@blog.url}}/#open">博客</a>
+      </li>
   </ul>
 </nav>
