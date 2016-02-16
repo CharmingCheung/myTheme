@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {{! highlight.js }}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/highlight/default.css"}}" />
+
     <title>{{meta_title}}</title>
     {{> meta}}
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7CRoboto+Slab:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno-zen.css"}}" />
     {{ghost_head}}
   </head>
+  {{! highlight.js }}
+  <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <body class="{{body_class}}">
     <header id="menu-button" class="expanded">
       <a><i class="icon icon-list"></i></a>
